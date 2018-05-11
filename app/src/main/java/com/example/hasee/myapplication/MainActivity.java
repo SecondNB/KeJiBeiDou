@@ -13,9 +13,12 @@ public class MainActivity extends AppCompatActivity {
 
         Log.d("今天的任务就是","李瑞超搭框架");
         init();
+
     }
 
     private void init() {
         // 创建方法
+        Log.d("今天的任务就是","郭家兴搭框架");
     }
+
 }
