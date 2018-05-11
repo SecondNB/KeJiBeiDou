@@ -12,5 +12,10 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         Log.d("今天的任务就是","李瑞超搭框架");
+        init();
+    }
+
+    private void init() {
+        // 创建方法
     }
 }
