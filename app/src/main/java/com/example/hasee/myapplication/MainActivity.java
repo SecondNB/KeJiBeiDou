@@ -18,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void init() {
         // 创建方法
-        Log.d("今天的任务就是","郭家兴搭框架");
+        Log.d("今天的任务就是","周少博请大家喝饮料");
     }
 
 }
