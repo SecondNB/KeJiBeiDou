@@ -16,6 +16,7 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+    buildToolsVersion '26.0.0'
 }
 
 dependencies {
@@ -28,18 +29,15 @@ dependencies {
     annotationProcessor 'com.jakewharton:butterknife-compiler:8.4.0'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
-
-
     //添加retrofit依赖
     compile 'com.squareup.retrofit2:retrofit:2.3.0'
     //添加gson转换器的依赖
     compile 'com.squareup.retrofit2:converter-gson:2.3.0'
     //注意 rxjava2是2.0的 不加2表示的是1.0
     compile 'com.squareup.retrofit2:adapter-rxjava2:2.3.0'
-
-    compile "io.reactivex.rxjava2:rxjava:2.1.10"
+    compile 'io.reactivex.rxjava2:rxjava:2.1.10'
     compile 'io.reactivex.rxjava2:rxandroid:2.0.2'
-
     // Glide
-    compile 'com.github.bumptech.glide:glide:3.7.0'   //Glide
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    //Glide
 }
