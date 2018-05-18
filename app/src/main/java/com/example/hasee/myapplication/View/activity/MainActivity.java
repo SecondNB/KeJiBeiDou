@@ -47,6 +47,7 @@ public class MainActivity extends AppCompatActivity  implements Imain, RadioGrou
         //产生关联
         categryPresenter.attachView(this);
 
+        //**********
 
 
 
