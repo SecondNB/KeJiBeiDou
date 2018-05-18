@@ -39,12 +39,14 @@ public class login_MainActivity extends AppCompatActivity {
                 Intent intent=new Intent(login_MainActivity.this,MainActivity.class);
                 startActivity(intent);
                 finish();
+
             }
 
             @Override
             public void onAnimationRepeat(Animation animation) {
 
             }
+
         });
 
 
