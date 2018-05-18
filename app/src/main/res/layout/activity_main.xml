@@ -1,11 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<com.example.hasee.myapplication.View.IView.ResideLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".View.activity.MainActivity"
-    android:background="@mipmap/bg_colorful">
+ >
+
+
+
+    <!--侧边栏-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg"
+            android:orientation="vertical"
+            >
+
+
+            <TextView
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="微一下"
+                />
+
+        </LinearLayout>
+
+    <!--主栏-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@mipmap/bg_colorful"
+        >
+
 
     <FrameLayout
         android:id="@+id/fragment_layout"
@@ -71,6 +100,6 @@
             android:textColor="@drawable/radio_selector"
             android:layout_weight="1"/>
     </RadioGroup>
+    </RelativeLayout>
 
-
-</RelativeLayout>
+</com.example.hasee.myapplication.View.IView.ResideLayout>
