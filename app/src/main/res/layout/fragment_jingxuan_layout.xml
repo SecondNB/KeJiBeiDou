@@ -19,8 +19,9 @@
             <com.youth.banner.Banner
                 android:id="@+id/jingxuan_banner"
                 android:layout_width="match_parent"
-                android:layout_height="@dimen/y500"
-                app:image_scale_type="fit_xy"></com.youth.banner.Banner>
+                android:layout_height="@dimen/y400"
+                app:image_scale_type="fit_xy"
+                android:background="@color/colorPrimary"></com.youth.banner.Banner>
 
             <LinearLayout
                 android:orientation="horizontal"
@@ -44,6 +45,7 @@
                     android:layout_gravity="center"
                     android:layout_marginLeft="@dimen/x30"/>
             </LinearLayout>
+            
 
             <android.support.v7.widget.RecyclerView
                 android:layout_below="@+id/jingxuan_banner"
@@ -51,7 +53,23 @@
                 android:layout_marginTop="@dimen/y88"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"></android.support.v7.widget.RecyclerView>
-
+            <LinearLayout
+                android:layout_marginTop="@dimen/y15"
+                android:layout_below="@+id/jingxuan_banner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="@dimen/x16">
+                <View
+                    android:layout_width="@dimen/x5"
+                    android:layout_height="@dimen/y39"
+                    android:background="#669900"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="精彩推荐"
+                    android:layout_marginLeft="@dimen/x5"/>
+            </LinearLayout>
         </RelativeLayout>
 
     </ScrollView>

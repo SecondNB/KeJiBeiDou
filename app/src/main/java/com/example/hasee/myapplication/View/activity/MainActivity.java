@@ -47,7 +47,7 @@ public class MainActivity extends AppCompatActivity  implements Imain, RadioGrou
         //产生关联
         categryPresenter.attachView(this);
 
-        
+
         //管理者...开启事务(一个事务只能执行一次)....默认的是要显示第一个首页
         fragmentManager = getSupportFragmentManager();
         fragment_jingxuan = new Fragment_jingxuan();
