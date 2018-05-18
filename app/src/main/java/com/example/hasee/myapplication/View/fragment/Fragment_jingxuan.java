@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -16,6 +17,7 @@ import com.example.hasee.myapplication.Contract.Constant;
 import com.example.hasee.myapplication.Model.bean.HomeBean;
 import com.example.hasee.myapplication.Presenter.CategryPresenter;
 import com.example.hasee.myapplication.R;
+import com.example.hasee.myapplication.View.adapter.JingxuanAdapter;
 import com.example.hasee.myapplication.View.interfaces.Imain;
 import com.example.hasee.myapplication.utils.ChenJinUtil;
 import com.example.hasee.myapplication.utils.GlideImageLoader;
@@ -62,6 +64,8 @@ public class Fragment_jingxuan extends Fragment implements Imain {
         return view;*/
         View view = View.inflate(getContext(), R.layout.fragment_jingxuan_layout, null);
         unbinder = ButterKnife.bind(this, view);
+        recyclerView.setLayoutManager(new LinearLayoutManager(getContext(),LinearLayoutManager.VERTICAL,false));
+        recyclerView.setNestedScrollingEnabled(false);
         return view;
     }
 
@@ -106,12 +110,17 @@ public class Fragment_jingxuan extends Fragment implements Imain {
             String json = responseBody.string();
             homeBean = new Gson().fromJson(json, HomeBean.class);
             Log.e("sdadasdasd", homeBean.getMsg());
-
-
             LunBo();
+            Tuijian();
         } catch (IOException e) {
             e.printStackTrace();
         }
+    }
+
+    private void Tuijian() {
+        List<HomeBean.RetBean.ListBean.ChildListBean> tuijian = homeBean.getRet().getList().get(4).getChildList();
+        JingxuanAdapter jingxuanAdapter = new JingxuanAdapter(getActivity(),tuijian);
+        recyclerView.setAdapter(jingxuanAdapter);
     }
 
     private void LunBo() {
