@@ -50,6 +50,7 @@ public class MainActivity extends AppCompatActivity  implements Imain, RadioGrou
 
 
 
+
         getSupportFragmentManager().beginTransaction().replace(R.id.fragment_layout,new Fragment_jingxuan()).commit();
 
         //管理者...开启事务(一个事务只能执行一次)....默认的是要显示第一个首页

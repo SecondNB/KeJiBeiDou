@@ -10,23 +10,10 @@
 
 
     <!--侧边栏-->
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="@drawable/bg"
-            android:orientation="vertical"
-            >
-
-
-            <TextView
-                android:layout_marginTop="15dp"
-                android:layout_marginLeft="10dp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="微一下"
+    <include layout="@layout/chehua_layout"
                 />
 
-        </LinearLayout>
+
 
     <!--主栏-->
     <RelativeLayout
