@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@mipmap/bg"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="@dimen/x160"
+        android:layout_height="@dimen/y160"
+        android:layout_marginTop="@dimen/y110"
+        android:layout_marginLeft="@dimen/x47"
+        android:src="@mipmap/photo"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="微影，微一下"
+        android:textSize="@dimen/x32"
+        android:textColor="#fff"
+        android:layout_marginLeft="@dimen/x70"
+        android:layout_marginTop="@dimen/y37"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/x70"
+        android:layout_marginTop="@dimen/y54"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/image_sc"
+            android:layout_width="@dimen/x32"
+            android:layout_height="@dimen/y32"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/cha"
+            android:layout_marginTop="@dimen/y8"
+            tools:ignore="RtlCompat" />
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="@dimen/x53"
+            android:text="我的收藏"
+            android:textColor="#fff"
+            android:textSize="@dimen/x32"
+            tools:ignore="RtlCompat" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/x70"
+        android:layout_marginTop="@dimen/y44"
+        android:gravity="center_vertical">
+
+        <ImageView
+
+            android:layout_width="@dimen/x32"
+            android:layout_height="@dimen/y32"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/cha"
+            android:layout_marginTop="@dimen/y8"
+            tools:ignore="RtlCompat" />
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="@dimen/x53"
+            android:text="我的下载"
+            android:textColor="#fff"
+            android:textSize="@dimen/x32"
+            tools:ignore="RtlCompat" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/x70"
+        android:layout_marginTop="@dimen/y44"
+        android:gravity="center_vertical">
+
+        <ImageView
+
+            android:layout_width="@dimen/x32"
+            android:layout_height="@dimen/y32"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/cha"
+            android:layout_marginTop="@dimen/y8"
+            tools:ignore="RtlCompat" />
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="@dimen/x53"
+            android:text="福利"
+            android:textColor="#fff"
+            android:textSize="@dimen/x32"
+            tools:ignore="RtlCompat" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/x70"
+        android:layout_marginTop="@dimen/y44"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="@dimen/x32"
+            android:layout_height="@dimen/y32"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/cha"
+            android:layout_marginTop="@dimen/y8"
+            tools:ignore="RtlCompat" />
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="@dimen/x53"
+            android:text="分享"
+            android:textColor="#fff"
+            android:textSize="@dimen/x32"
+            tools:ignore="RtlCompat" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/x70"
+        android:layout_marginTop="@dimen/y44"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="@dimen/x32"
+            android:layout_height="@dimen/y32"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/cha"
+            android:layout_marginTop="@dimen/y8"
+            tools:ignore="RtlCompat" />
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="@dimen/x53"
+            android:text="建议反馈"
+            android:textColor="#fff"
+            android:textSize="@dimen/x32"
+            tools:ignore="RtlCompat" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/x70"
+        android:layout_marginTop="@dimen/y44"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="@dimen/x32"
+            android:layout_height="@dimen/y32"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/cha"
+            android:layout_marginTop="@dimen/y8"
+            tools:ignore="RtlCompat" />
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="@dimen/x53"
+            android:text="设置"
+            android:textColor="#fff"
+            android:textSize="@dimen/x32"
+            tools:ignore="RtlCompat" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/y216"
+        >
+        <ImageView
+            android:layout_width="@dimen/x38"
+            android:layout_height="@dimen/y38"
+            android:src="@drawable/my"
+            android:layout_marginLeft="@dimen/x70"
+            android:scaleType="fitXY"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#fff"
+            android:text="关于"
+            android:textSize="@dimen/x32"
+            android:layout_marginLeft="@dimen/x122"
+            />
+
+        <ImageView
+            android:layout_width="@dimen/x38"
+            android:layout_height="@dimen/y38"
+            android:src="@drawable/like"
+            android:layout_marginLeft="@dimen/x222"
+            android:scaleType="fitXY"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#fff"
+            android:text="主题"
+            android:textSize="@dimen/x32"
+            android:layout_marginLeft="@dimen/x270"
+            />
+
+
+
+
+
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>
