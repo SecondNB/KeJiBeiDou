@@ -12,6 +12,9 @@
     <!--侧边栏-->
     <include layout="@layout/chehua_layout"
         />
+    <include layout="@layout/chehua_layout"/>
+
+
 
     <!--主栏-->
     <RelativeLayout

@@ -30,7 +30,7 @@ public class RetrofitUtil {
     private RetrofitUtil(String baseUrl) {
         OkHttpClient okHttpClient = new OkHttpClient.Builder()
                 //.addNetworkInterceptor()//网络拦截器
-                .addInterceptor(new CommonParamsInterceptor())//拦截器
+                //.addInterceptor(new CommonParamsInterceptor())//拦截器
                 //.connectTimeout()//连接超时
                 .build();
 

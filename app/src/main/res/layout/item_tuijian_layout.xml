@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#80FFFFFF">
+        <ImageView
+            android:id="@+id/tuijian_image"
+            android:layout_width="@dimen/x668"
+            android:scaleType="centerCrop"
+            android:layout_height="@dimen/y300"
+            android:padding="@dimen/x16" />
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/tuijian_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="推荐"
+        android:textColor="#F9F8F9"/>
+</LinearLayout>
