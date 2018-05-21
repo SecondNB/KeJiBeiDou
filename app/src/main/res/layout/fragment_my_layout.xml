@@ -1,9 +1,236 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@mipmap/bg_colorful"
     android:layout_height="match_parent">
-    <TextView
+
+    <include layout="@layout/title_name_layout" />
+
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="我的"/>
+        android:layout_height="@dimen/y222">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y222"
+            android:scaleType="fitXY"
+            android:src="@drawable/my_bg_colorful"
+            />
+
+        <ImageView
+            android:layout_width="@dimen/x61"
+            android:layout_height="@dimen/y61"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="30dp"
+            android:src="@drawable/my_set"
+            tools:ignore="RtlCompat" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y125">
+
+        <ImageView
+            android:layout_width="@dimen/x39"
+            android:layout_height="@dimen/y39"
+            android:scaleType="fitXY"
+            android:src="@drawable/my_records"
+            android:layout_marginTop="@dimen/y46"
+            android:layout_marginLeft="@dimen/x46"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="@dimen/y54"
+            android:layout_marginLeft="@dimen/x105"
+            android:text="历史"
+            android:textColor="#fff"
+            android:textSize="@dimen/x25"
+            tools:ignore="RtlCompat" />
+
+        <ImageView
+            android:layout_width="@dimen/x17"
+            android:layout_height="@dimen/y33"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="37dp"
+            android:src="@drawable/right"
+            tools:ignore="RtlCompat" />
+
+        <View
+            android:layout_width="@dimen/x520"
+            android:layout_height="@dimen/y1"
+            android:layout_alignParentBottom="true"
+
+            android:layout_centerHorizontal="true"
+            android:background="#ADA8A9" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y211">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_lishi_view"
+            android:layout_width="@dimen/x470"
+            android:layout_height="@dimen/y178"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/y16"
+
+            tools:ignore="RtlCompat">
+
+
+        </android.support.v7.widget.RecyclerView>
+        <View
+            android:layout_width="@dimen/x520"
+            android:layout_height="@dimen/y1"
+            android:layout_alignParentBottom="true"
+
+            android:layout_centerHorizontal="true"
+            android:background="#ADA8A9" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y113">
+
+        <ImageView
+            android:layout_width="@dimen/x39"
+            android:layout_height="@dimen/y39"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x46"
+            android:scaleType="fitXY"
+            android:src="@drawable/my_down"
+            tools:ignore="RtlCompat" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="@dimen/y45"
+            android:layout_marginLeft="@dimen/x105"
+            android:text="缓存"
+            android:textColor="#fff"
+            android:textSize="@dimen/x25"
+            tools:ignore="RtlCompat" />
+        <ImageView
+            android:layout_width="@dimen/x17"
+            android:layout_height="@dimen/y33"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="37dp"
+            android:src="@drawable/right"
+            tools:ignore="RtlCompat" />
+
+        <View
+            android:layout_width="@dimen/x520"
+            android:layout_height="@dimen/y1"
+            android:layout_alignParentBottom="true"
+
+            android:layout_centerHorizontal="true"
+            android:background="#ADA8A9" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y113">
+
+        <ImageView
+            android:layout_width="@dimen/x39"
+            android:layout_height="@dimen/y39"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x46"
+            android:scaleType="fitXY"
+            android:src="@drawable/my_collection"
+            tools:ignore="RtlCompat" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="@dimen/y45"
+            android:layout_marginLeft="@dimen/x105"
+            android:text="收藏"
+            android:textColor="#fff"
+            android:textSize="@dimen/x25"
+            tools:ignore="RtlCompat" />
+        <ImageView
+            android:layout_width="@dimen/x17"
+            android:layout_height="@dimen/y33"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="37dp"
+            android:src="@drawable/right"
+            tools:ignore="RtlCompat" />
+
+        <View
+            android:layout_width="@dimen/x520"
+            android:layout_height="@dimen/y1"
+            android:layout_alignParentBottom="true"
+
+            android:layout_centerHorizontal="true"
+            android:background="#ADA8A9" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y113">
+
+        <ImageView
+            android:layout_width="@dimen/x39"
+            android:layout_height="@dimen/y39"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x46"
+            android:scaleType="fitXY"
+            android:src="@drawable/my_everyone"
+            tools:ignore="RtlCompat" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="@dimen/y45"
+            android:layout_marginLeft="@dimen/x105"
+            android:text="主题"
+            android:textColor="#fff"
+            android:textSize="@dimen/x25"
+            tools:ignore="RtlCompat" />
+        <ImageView
+            android:layout_width="@dimen/x17"
+            android:layout_height="@dimen/y33"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="37dp"
+            android:src="@drawable/right"
+            tools:ignore="RtlCompat" />
+
+        <View
+            android:layout_width="@dimen/x520"
+            android:layout_height="@dimen/y1"
+            android:layout_alignParentBottom="true"
+
+            android:layout_centerHorizontal="true"
+            android:background="#ADA8A9" />
+
+    </RelativeLayout>
+
+
 </LinearLayout>
+
