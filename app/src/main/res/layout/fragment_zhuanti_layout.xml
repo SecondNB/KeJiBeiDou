@@ -1,9 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<com.scwang.smartrefresh.layout.SmartRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
-    <TextView
+    android:layout_height="match_parent"
+    android:id="@+id/smartrefresh_Layou"
+    >
+
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="专题"/>
-</LinearLayout>
+        android:layout_height="match_parent">
+            <android.support.v7.widget.RecyclerView
+                android:layout_marginTop="16dp"
+                android:id="@+id/recycel"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+
+            </android.support.v7.widget.RecyclerView>
+    </ScrollView>
+</com.scwang.smartrefresh.layout.SmartRefreshLayout>

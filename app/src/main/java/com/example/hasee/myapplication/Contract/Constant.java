@@ -10,7 +10,7 @@ public class Constant {
     //首页接口
     public static final String homePage_URL="front/homePageApi/homePage.do";
     //频道列表
-    public static final String getVideoList_URL="columns/getVideoList.do";
+    public static final String getVideoList_URL="front/columns/getVideoList.do";
     //详情接口
     public static final String videoDetail_URL="front/videoDetailApi/videoDetail.do";
 

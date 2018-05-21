@@ -23,6 +23,8 @@
             </intent-filter>
 
         </activity>
+        <activity android:name=".View.activity.DetailActivity"></activity>
+        <activity android:name=".View.activity.ShiPingXiangQingActivity"></activity>
     </application>
 
 </manifest>
